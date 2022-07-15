@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Brickfilm_Studio.Captur"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Brickfilm_Studio"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Margin="21,63,-758,-438">
+        <Border x:Name="CaptureArea" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="452" Margin="-86,-5,0,0" VerticalAlignment="Top" Width="873" Background="#FFFDFBFB">
+            <Border BorderBrush="Black" BorderThickness="1" Margin="9,9,9,76">
+                <StackPanel x:Name="CaptureArea1" Margin="0,0,0,-27"/>
+            </Border>
+        </Border>
+        <StackPanel x:Name="PlayButtons" Margin="-96,0,-102,0">
+            <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="150,570,0,0" VerticalAlignment="Top" Width="75"  />
+            <Button x:Name="button_Copy" Content="Button" HorizontalAlignment="Left" Margin="257,570,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="button_Copy1" Content="Button" HorizontalAlignment="Left" Margin="376,570,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="button_Copy2" Content="Button" HorizontalAlignment="Left" Margin="497,570,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="button_Copy3" Content="Button" HorizontalAlignment="Left" Margin="618,570,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="button_Copy4" Content="Button" HorizontalAlignment="Left" Margin="727,570,0,0" VerticalAlignment="Top" Width="75"/>
+        </StackPanel>
+        <Border x:Name="FrameArea" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="230" Margin="-86,452,-95,-7" VerticalAlignment="Top" Width="1218" Background="White"/>
+    </Grid>
+</UserControl>

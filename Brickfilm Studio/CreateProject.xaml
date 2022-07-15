@@ -1,0 +1,43 @@
+﻿<Window x:Class="Brickfilm_Studio.CreateProject"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       
+ xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Brickfilm_Studio"
+        mc:Ignorable="d"
+        Title="New Project" Height="300" Width="535" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False">
+    <Grid Margin="0,0,0,-4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="47*"/>
+        </Grid.RowDefinitions>
+
+        <Button  Click="Cancel_Click" x:Name="Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="17,201,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" IsCancel="True"/>
+        <WrapPanel Visibility="Visible" x:Name="ProjectArea" HorizontalAlignment="Left" Height="214" Margin="11,5,0,0" VerticalAlignment="Top" Width="513" Grid.RowSpan="2" Grid.ColumnSpan="2">
+
+            <TextBox  x:Name="New" HorizontalAlignment="Left" Height="23" Margin="122,54,0,0" TextWrapping="Wrap" Width="289" Grid.Row="1" VerticalAlignment="Center" BorderBrush="Black" />
+            <Label x:Name="label" Content="Project Name:" HorizontalAlignment="Left" Margin="17,-24,0,0" VerticalAlignment="Top" Height="26" Grid.Row="1" Width="89"/>
+            <Label x:Name="label1" Content="Project Loction:" HorizontalAlignment="Left" Margin="-86,67,0,0" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="ProjectLoc"   HorizontalAlignment="Left" Height="23" Margin="125,-25,0,0" TextWrapping="Wrap"  Loaded="ProjectLoc_Loaded" VerticalAlignment="Top" Width="286" Grid.Row="1" BorderBrush="#FF0C0C0C"/>
+            <Button x:Name="BrowseButton" Click="BrowseButton_Click" Content="Browse" Width="81" Margin="10,-26,7,0" Height="22" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.349"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </WrapPanel>
+
+        <Button x:Name="OkButton" Click="OKButtonClick" Content="OK" HorizontalAlignment="Left" Margin="439,202,0,0" VerticalAlignment="Top" Width="75" IsDefault="True" Grid.Row="1" Height="22" Grid.ColumnSpan="2"/>
+
+
+    </Grid>
+</Window>
